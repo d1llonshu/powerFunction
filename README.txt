@@ -1,0 +1,1 @@
+powerFunction returns an integer that is base to the power of exponent. It takes two inputs. 
