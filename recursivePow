@@ -1,0 +1,14 @@
+def power(base, exponent):
+	exponent = exponent
+	if exponent == 1:
+		return base
+	else:
+		base = base * power(base, exponent - 1)
+		return base
+		
+print("3 to the power of 3 is {}".format(power(3,3)))
+print("10 to the power of 2 is {}".format(power(10,2)))
+humanNum = input("insert an integer: ")
+humanExp = input("insert an exponent: ")
+
+print("{} to the power of {} is {}".format(humanNum, humanExp, power(int(humanNum), int(humanExp))))
